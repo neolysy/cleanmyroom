@@ -1,8 +1,9 @@
 import React from 'react';
+import UserList from './components/home/main';
 
 class App extends React.Component {
 	render() {
-		return <p>ooo</p>;
+		return (<UserList />);
 	}
 }
 
