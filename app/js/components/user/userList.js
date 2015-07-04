@@ -1,5 +1,6 @@
 import React from 'react';
 import UserListItem from './userListItem';
+import {getAvailableCleanersList} from '../../config/api';
 
 export default class UserList extends React.Component {
 
@@ -11,8 +12,7 @@ export default class UserList extends React.Component {
     }
 
     componentDidMount() {
-        fetch('/mock/availableCleaners.json')
-	        .then(res => res.json())
+        getAvailableCleanersList()
 	        .then(data => {
 	            this.setState({
 	                cleaners: data
