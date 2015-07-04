@@ -4,8 +4,17 @@ var getAvailableCleanersList = function() {
 	return fetch(url).then(res => res.json());
 }
 
-var getUserProfile = function() {
-	let url = '/mock/userProfile.json';
+var getUserProfile = function(id) {
+	let url = '/mock/users.json';
+
+	return fetch(url).then(res => res.json())
+		.then( list => {
+			return list.filter( p => p.id == id );
+		});
+}
+
+var getUsers = function(id) {
+	let url = '/mock/users.json';
 
 	return fetch(url).then(res => res.json());
 }
@@ -13,5 +22,6 @@ var getUserProfile = function() {
 
 export { 
 	getAvailableCleanersList, 
-	getUserProfile 
+	getUserProfile,
+	getUsers
 };

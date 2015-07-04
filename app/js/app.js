@@ -15,5 +15,5 @@ class App extends React.Component {
 
 React.render(<Router history={history}>
     <Route path="/" component={HomeRoute}/>
-    <Route path="/profile" component={ProfileRoute}/>
+    <Route path="/profile/:profileId" component={ProfileRoute}/>
   </Router>, document.getElementById('appContainer'));

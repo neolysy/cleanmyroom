@@ -11,11 +11,14 @@ export default class UserProfile extends React.Component {
     }
 
     componentDidMount() {
-        getUserProfile()
+        console.log(this.props);
+        getUserProfile(this.props.profileId)
 	        .then(data => {
-	            this.setState({
-	                profile: data
-	            });
+	            if (data.length == 1) {
+                    this.setState({
+    	                profile: data[0]
+    	            });
+                }
 	        })
 	        .catch (err => console.error(err));
     }
