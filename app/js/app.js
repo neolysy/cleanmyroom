@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Router, Route } from 'react-router';
-import { history } from 'react-router/lib/BrowserHistory';
+import { history } from 'react-router/lib/HashHistory';
 import HomeRoute from './routes/home';
 import ProfileRoute from './routes/profile';
 
@@ -14,6 +14,6 @@ class App extends React.Component {
 
 
 React.render(<Router history={history}>
-    <Route path="/app/" component={HomeRoute}/>
-    <Route path="/app/profile" component={ProfileRoute}/>
+    <Route path="/" component={HomeRoute}/>
+    <Route path="/profile" component={ProfileRoute}/>
   </Router>, document.getElementById('appContainer'));
