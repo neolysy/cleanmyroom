@@ -1,5 +1,6 @@
 import React from 'react';
 import UserListItem from './userListItem';
+
 export default class UserList extends React.Component {
 
     constructor(props) {
@@ -22,7 +23,7 @@ export default class UserList extends React.Component {
 
     render() {
     	let list = this.state.cleaners.map(
-    		user => <li><UserListItem name={user.name} /></li>
+    		user => <li key={user.id}><UserListItem name={user.name} /></li>
     	);
         return (
         	<ul> { list } </ul>

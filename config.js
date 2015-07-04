@@ -20,6 +20,7 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.6.15",
     "core-js": "npm:core-js@0.9.18",
     "react": "npm:react@0.14.0-beta1",
+    "react-router": "npm:react-router@1.0.0-beta3",
     "github:jspm/nodelibs-buffer@0.1.0": {
       "buffer": "npm:buffer@3.3.0"
     },
@@ -72,6 +73,10 @@ System.config({
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
+    "npm:invariant@2.1.0": {
+      "envify": "npm:envify@3.4.0",
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
     "npm:jstransform@10.1.0": {
       "base62": "npm:base62@0.1.1",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -82,6 +87,12 @@ System.config({
     },
     "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:react-router@1.0.0-beta3": {
+      "invariant": "npm:invariant@2.1.0",
+      "keymirror": "npm:keymirror@0.1.1",
+      "qs": "npm:qs@2.4.1",
+      "warning": "npm:warning@1.0.2"
     },
     "npm:react@0.14.0-beta1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -120,6 +131,9 @@ System.config({
     },
     "npm:util@0.10.3": {
       "inherits": "npm:inherits@2.0.1",
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:warning@1.0.2": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     }
   }
