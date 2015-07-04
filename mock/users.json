@@ -1,0 +1,22 @@
+[
+	{
+		"id": 1,
+		"name": "Nina Petrivna",
+		"phone": "068 00 00 000"
+	},
+	{
+		"id": 2,
+		"name": "Vasylyna Pavlivna",
+		"phone": "068 00 00 000"
+	},
+	{
+		"id": 3,
+		"name": "Sergiy Antonovych",
+		"phone": "068 00 00 000"
+	},
+	{
+		"id": 4,
+		"name": "Olena Ivanivna",
+		"phone": "0689998877"
+	}
+]
